@@ -31,7 +31,11 @@ class plgSystemMobileredirect extends JPlugin
 		# see if redirect should be skipped?
 		if($app->input->get('smr') == 1)
 		{
-			$_COOKIE['smr'] = $skip_mobile_redirect = 1;
+			# set skip mobile redirect variable
+			$skip_mobile_redirect = 1;
+			
+			# set cookie for a year
+			$app->input->cookie()->set('smr', 1, time() + 31556926);
 		}
 		
 		# if this is not a mobile device, redirect to url
