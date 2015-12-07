@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>mobile redirect</name>
+	<author>Adam van Dongen</author>
+	<creationDate>dec 2015</creationDate>
+	<copyright>Copyright (C) bandhosting.nl</copyright>
+	<license>GPL License</license>
+	<authorEmail>adam@bandhosting.nl</authorEmail>
+	<authorUrl>www.bandhosting.nl</authorUrl>
+	<version>1.0.0</version>
+	<description>Mobile redirect plugin</description>
+	<files>
+		<folder>libs</folder>
+		<filename plugin="mobileredirect">mobileredirect.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="url" type="text" default="" description="URL to redirect to when mobile device" label="Redirect URL" size="50" />
+ 			</fieldset>
+ 		</fields>
+ 	</config>
+</extension>
