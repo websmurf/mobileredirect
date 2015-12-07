@@ -7,7 +7,7 @@
 	<license>GPL License</license>
 	<authorEmail>adam@bandhosting.nl</authorEmail>
 	<authorUrl>www.bandhosting.nl</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>Mobile redirect plugin</description>
 	<files>
 		<folder>libs</folder>
